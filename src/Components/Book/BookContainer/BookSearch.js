@@ -6,6 +6,7 @@ export default class BookSearch extends Component{
     super(props);
     this.state = {term:''};
     this.handleClick = this.handleClick.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   render(){
@@ -16,6 +17,7 @@ export default class BookSearch extends Component{
                value={this.state.term}
                 placeholder="Search for..."
                 aria-label="Search for..."
+                onKeyPress={this.handleKeyPress}
                 onChange={event => this.setState({term:event.target.value})}
                />
              <span className="input-group-btn">
@@ -32,6 +34,12 @@ export default class BookSearch extends Component{
 
   handleClick(){
     this.props.onSearchChange(this.state.term);
+  }
+
+  handleKeyPress(event){
+    if(event.key == 'Enter'){
+      this.handleClick();
+    }
   }
 
 }

@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
+.addon {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(224,220,224,1);
+-moz-box-shadow: 0px 0px 9px 0px rgba(224,220,224,1);
+box-shadow: 0px 0px 9px 0px rgba(224,220,224,1);
+  margin-bottom: 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.addon li {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  overflow: hidden;
+}
+.addon li {
+  list-style: none;
+}
+.clearfix {
+  display: block;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-bottom: 0 !important;
+}
+ul {
+  list-style: none;
+}
+.round {
+  display: block;
+  height: 164px;
+  width: 125px;
+  float: left;
+}
+.addon li em.extra {
+  background-position: -118px 0;
+}
+.addon li em.hot {
+  background-position: -58px 0;
+}
+.addon p {
+  padding: 10px 15px;
+  margin: 0;
+}
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.addon li .legend-info {
+  float: left;
+  margin-left: 10px;
+  width: 600px;
+}
+
+.container-fluid-nopadding{
+  padding: 0 !important;
+}
+.form-search{
+  padding: 2%;
+}
+.book-title{
+  width: 100%;
+  font-size: 14px;
+  padding: 0px 5px 5px 5px !important;
+}
+.navbar-brand{
+  color: white !important;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.search-btn:hover{
+  text-decoration: underline;
+}
+
+.appContainer{ margin: auto;width: 70%;}
+
+.loadMore{
+  text-align: center;
+  padding: 2%;
+}
+
+.loadBtn{
+  cursor: pointer;
+}
+
+.book-desc{
+  padding-left: 10px !important;
+}
+
+hr{
+  margin-bottom: 0 !important;
+  margin-top: 2% !important;
+}
